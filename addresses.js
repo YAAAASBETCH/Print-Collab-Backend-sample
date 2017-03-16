@@ -60,11 +60,9 @@ const addressesSchema = new Schema({
             lng: Number
         }
     },
-    customer_id: {  // does this allow the addresses to be identified by the user's Id?
+    customer_id: { 
         type: String
     }
 })
 
-// define our addresses model
-// module.exports allows us to pass this to other files when it is called
 module.exports = mongoose.model('Addresses', addressesSchema)
