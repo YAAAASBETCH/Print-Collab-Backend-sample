@@ -121,19 +121,4 @@ function addressesController() { // exporting on above line and defining on this
                 return res.status(500).send(new responses.ErrorResponse(err))
             })
     }
-
-    // function removeAddress(req, res) {
-    //     let queryCondition = {
-    //         customer_id: req.user._id
-    //     }
-    //     addressesService.removeOne(queryCondition)
-    //         .then((addresses) => {
-    //             const responseModel = new responses.ItemResponse()
-    //             responseModel.item = addresses
-    //             res.json(responseModel)
-    //         })
-    //         .catch((err) => {
-    //             return res.status(500).send(new responses.ErrorResponse(err))
-    //         })
-    // }
 }
