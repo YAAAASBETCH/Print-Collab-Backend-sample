@@ -1,5 +1,4 @@
 module.exports = addressesService
-// function begins here. addressesService is exported in the above line.
 function addressesService(options) {
     let Addresses
 
@@ -19,7 +18,7 @@ function addressesService(options) {
     }
 
     function getAll() {
-        return Addresses.find() // returns a method of Promise. Same as calling db.addresses.find() in mongo shell
+        return Addresses.find() 
     }
 
     function getByUser(queryCondition) {
