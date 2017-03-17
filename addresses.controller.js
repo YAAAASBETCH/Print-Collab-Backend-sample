@@ -5,7 +5,7 @@ const addressesModel = require('../models/addresses')
 const addressesService = require('../services/addresses.service')({
     modelService: addressesModel
 })
-
+(function() {
 module.exports = addressesController
 
 function addressesController() { // exporting on above line and defining on this line.
@@ -122,3 +122,4 @@ function addressesController() { // exporting on above line and defining on this
             })
     }
 }
+})();
