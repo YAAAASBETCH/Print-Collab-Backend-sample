@@ -1,4 +1,5 @@
 module.exports = addressesService
+(function() {
 function addressesService(options) {
     let Addresses
 
@@ -44,3 +45,4 @@ function addressesService(options) {
         return Addresses.findOneAndRemove(queryCondition)
     }
 }
+})();
